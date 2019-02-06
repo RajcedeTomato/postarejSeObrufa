@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="bruf-style.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Postarej se o Brufíka</title>
+    </head>
+    <body>
+
+<div class="container">
+
+<div class="bruf-body" id="brufik-body">
+    
+</div>
+<p id="score">Počet bodů: </p>
+<div class="main">
+
+<div id="toilet" ></div> <button class="scale" name="toilet" onclick='getFullScale("toilet")' value="toilet">Dojdi s Brufem ven</button>
+<div id="play"></div><button class="scale" name="toilet" onclick='getFullScale("play")' value="play">Jdi si hrát s Brufem</button>
+<div id="eat"></div><button class="scale" name="toilet" onclick='getFullScale("eat")' value="eat">Dej Brufovi granulky</button>
+<div id="run"></div><button class="scale" name="toilet" onclick='getFullScale("run")' value="run">Jdi vyběhat Brufa</button>
+<div id="sleep"></div><button class="scale" name="toilet" onclick='getFullScale("sleep")' value="sleep">Dej Brufa spinkat</button>
+<div id="pet"></div><button class="scale" name="toilet" onclick='handlePetting()' value="pet">Pomazli Brufíka</button>
+</div>
+</div>
+<div id="sabotage">
+<p id="zereinfo">Bruf něco žere</p>
+<p id="result"></p>
+<button name="stop" value="stop" onclick='stopEatingThat()'>Brufe nesmíš!</button>
+</div>
+
+
+
+<script src="bruflife.js"></script>
+
+
+    </body>
+</html>
